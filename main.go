@@ -93,6 +93,7 @@ func sendCommandToServers(servers []string, command string, timeout time.Duratio
 func main() {
 
 	// Read command line arguments
+	// TODO: add - `get_command`, `download_command`, `upload_command`. Add flags for `get`, `download`, `upload`
 	configFile := flag.String("config", "", "path to config file")
 	groupName := flag.String("group", "", "name of server group")
 	command := flag.String("command", "", "command to send to servers")
