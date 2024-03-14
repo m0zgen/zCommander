@@ -1,3 +1,9 @@
-servers:
-  - https://192.168.10.153:38080
-  - https://192.168.10.179:38080
+groups:
+  testlocal1:
+    - https://127.0.0.1:80
+  testlocal2:
+    - https://127.0.0.1:81
+creation_timeout: 2
+users_file: "users.txt"
+add_command: "/add?user=user_"
+remove_command: "/remove?user=user_"
